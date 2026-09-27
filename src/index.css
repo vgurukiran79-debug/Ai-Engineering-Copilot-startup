@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #070B14;
+    --panel-bg: #0D1527;
+    --cyan-accent: #00D2FF;
+    --blue-accent: #2563EB;
+    --text-primary: #F8FAFC;
+    --text-secondary: #94A3B8;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    background-color: #070B14;
+    color: #F8FAFC;
+    overflow-x: hidden;
+  }
+
+  code, pre, kbd {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom sleek dark scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(7, 11, 20, 0.6);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.2);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 210, 255, 0.4);
+}
+
+/* Glassmorphism helpers */
+.glass-panel {
+  background: rgba(13, 21, 39, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 210, 255, 0.15);
+}
+
+.glass-panel-hover:hover {
+  border-color: rgba(0, 210, 255, 0.35);
+  box-shadow: 0 0 20px -5px rgba(0, 210, 255, 0.2);
+}
+
+.glow-cyan-sm {
+  box-shadow: 0 0 15px -3px rgba(0, 210, 255, 0.25);
+}
+
+.glow-blue-sm {
+  box-shadow: 0 0 15px -3px rgba(37, 99, 235, 0.35);
+}
+

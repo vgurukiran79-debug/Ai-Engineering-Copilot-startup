@@ -1,0 +1,6 @@
+{
+  "name": "AI Engineering Copilot",
+  "description": "A modern 3-column AI Chatbot & Engineering Assistant for developers and software engineers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
