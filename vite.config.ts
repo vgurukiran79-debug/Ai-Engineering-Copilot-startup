@@ -5,6 +5,10 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    // Setting base to './' (or process.env.BASE_URL) allows assets to load correctly
+    // regardless of whether the site is deployed at the domain root (e.g. user.github.io)
+    // or inside a repository subpath (e.g. user.github.io/my-repo-name/)
+    base: process.env.BASE_URL || './',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
